@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1d4ed8, #0f172a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+}
+
+/* Layout Card */
+.wrapper {
+  width: 100%;
+  max-width: 640px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 26px;
+  box-shadow: 0 25px 55px rgba(0,0,0,0.18);
+  border: 1px solid #e5e7eb;
+}
+
+/* Headings & Text */
+.title {
+  text-align: center;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #0f172a;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 4px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: 0.25s;
+  font-size: 15px;
+  color: #111827;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.18);
+}
+
+/* Search Button */
+.search-box button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: 0.25s;
+}
+
+.search-box button:hover {
+  background: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+.warning {
+  color: #b91c1c;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Result Box */
+.result {
+  margin-top: 22px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.result h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.result p {
+  margin: 6px 0;
+  color: #374151;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.result strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Audio Button */
+.audio-btn {
+  margin-top: 12px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #10b981;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.audio-btn:hover {
+  background: #047857;
+  transform: translateY(-1px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 520px) {
+  .search-box {
+    flex-direction: column;
+  }
+  .search-box button {
+    width: 100%;
+  }
+}
